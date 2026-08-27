@@ -13,7 +13,7 @@ pipeline{
                 bat "docker rm -f mycontainer || exit 0"
                 //forcibly removes the Docker container named mycontainer
                 //if the container doesnot exist,this command will fail and 
-                bat "docker run -d -p 5000:5000 --name mycontainer mypythonflaskapp"
+                bat "docker run -d -p 5050:5050 --name mycontainer mypythonflaskapp"
             }
         }
     }
